@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Audiowide", cursive;
+  font-size: 20px;
+  /* background-image: url(./assets/Yama_Yeti_4.png);
+  background-size: cover; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Audiowide", cursive;
+}
+body .MuiButtonBase-root {
+  /* font-family: "Roundish Toons", sans-serif; */
+  /* line-height: 1.3; */
+  font-size: 16px;
+}
+.App {
+  text-align: center;
+}
+.main-wrapper {
+  background-image: url(./assets/Sceen\ BG_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #000; */
+}
+.hero-section {
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* padding-bottom: 50px; */
+  min-height: 100vh;
+}
+.hero-section .MuiButton-containedPrimary {
+  /* background: white; */
+  color: black;
+  display: block;
+
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Audiowide", cursive;
+  margin-top: 20px;
+}
+.hero-section .MuiButton-containedPrimary span {
+  font-size: 30px;
+}
+.hero-section .MuiButton-containedPrimary:hover {
+  background-color: #fff;
+}
+.hero-section.no-wallet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect-wallet {
+  text-align: center;
+  width: 100%;
+}
+.connect-wallet h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.wallet-item {
+  display: flex;
+  justify-content: space-between;
+}
+.wallet-content .MuiButton-contained {
+  font-family: "Audiowide", cursive;
+}
+.wallet-content p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.wallet-content .MuiButtonBase-root span {
+  justify-content: center;
+}
+.wallet-item {
+  font-size: 24px;
+}
+.MuiDialogContent-root
+  .MuiList-root.MuiList-padding
+  > .MuiListItem-root:not(:first-child)
+  > select {
+  display: none;
+}
+
+.MuiList-root.MuiList-padding > .MuiListItem-root:nth-child(n + 2) > select {
+  display: none;
+}
