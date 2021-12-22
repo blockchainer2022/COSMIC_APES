@@ -41,18 +41,19 @@ const useStyles = makeStyles((theme)=>({
   root: {
    textAlign:"center",
    paddingBottom:"50px",
+  
    "& .wallet-item":{
-     color:"#56088C",
+     color:"white",
      fontWeight:"bold"
    },
    "& h1":{
-     fontSize:"30px",
-     margin:"50px auto 30px auto",
-     maxWidth:"600px",
+     fontSize:"60px",
+     margin:"20px auto 0px auto",
+    //  maxWidth:"800px",
+     color:"white",
      width:"100%",
-     color:"#FF7900",
      [theme.breakpoints.down("md")]: {
-     fontSize:"24px",
+     fontSize:"40px",
   
       
     },
@@ -63,6 +64,7 @@ const useStyles = makeStyles((theme)=>({
     margin:"0px auto 20px auto",
     fontSize:"24px",
     lineHeight:"24px",
+    color:"white",
     [theme.breakpoints.down("md")]: {
       fontSize:"18px",
    
@@ -101,8 +103,8 @@ const useStyles = makeStyles((theme)=>({
   },
   logo:{
       paddingTop:"100px",
-      paddingBottom:"30px",
-      marginBottom:"40px",
+      paddingBottom:"20px",
+      marginBottom:"10px",
       "& p":{
         color:"white",
         fontSize:"80px"
@@ -132,7 +134,7 @@ const useStyles = makeStyles((theme)=>({
 
     ,"& a":{
       display:"block",
-      marginLeft:10
+      marginLeft:20
 
       ,"& img":{
        width:"70px"
@@ -333,7 +335,7 @@ const Home = (props: HomeProps) => {
       <Container className={classes.root}>
         <div className={classes.logo}>  
           {/* <img src={HeaderImage} alt="" /> */}
-          <p>COSMIC APES</p>
+          <h1>COSMIC APES</h1>
           {/* <p>A collection of 5,000 algorithmically generated, collectible,
 MMA monkeys ready to fight for the championship.</p> */}
         </div>  
@@ -347,12 +349,13 @@ MMA monkeys ready to fight for the championship.</p> */}
 
        <div className={classes.bottom}>
          <h6>Supply?</h6>
-         <br/>
+
             <p> 999 Cosmic Apes</p>
           </div>
+    <br />
        <div className={classes.bottom}>
             <h6>Minting cost?</h6>
-            <p>0.05 sol</p>
+            <p>0.35 sol</p>
           </div>
        </div>
        
@@ -360,9 +363,9 @@ MMA monkeys ready to fight for the championship.</p> */}
        <div>
        <div className={classes.walletWrapper}>
        {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+        <p className="wallet-item" style={{margin:" 20px auto 0 auto", }}>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
-        {wallet && <p className="wallet-item"><span> Balance: </span> <span> {(balance || 0).toLocaleString()} SOL </span> </p>}
+        {wallet && <p className="wallet-item "><span> Balance: </span> <span> {(balance || 0).toLocaleString()} SOL </span> </p>}
 
 {wallet && <p  className="wallet-item"> <span>Total Available: </span> <span> {itemsAvailable} </span></p>}
 
