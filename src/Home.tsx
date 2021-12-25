@@ -297,7 +297,7 @@ const Home = (props: HomeProps) => {
   };
   // let startTime = ('11/04/2021T13:00:00.000+0000')
 //  let startTime = ('11/04/2021T13:00:00.000+0000').replace(/(+\d{2})(\d{2})$/, "$1:$2")
-  const difference = +dayjs.utc('2021-11-10T18:00:00.000+0000', 'YYYY-MM-DDTHH:mm:ss.000ZZ') - +new Date();
+  const difference = +dayjs.utc('2021-12-26T18:00:00.000+0000', 'YYYY-MM-DDTHH:mm:ss.000ZZ') - +new Date();
 
   useEffect(() => {
     const id = setTimeout(() => {
@@ -343,8 +343,8 @@ MMA monkeys ready to fight for the championship.</p> */}
         
 
        <div className={classes.icon}>
-          <a href="http://discord.gg/HA2gFYeU8B" target="_blank" ><img src={Discord} alt="" /></a>
-          <a  href="https://twitter.com/YamaYeti" target="_blank"><img src={Twitter} alt="" /></a>
+          <a href="https://discord.com/invite/8VTNmSkRWj" target="_blank" ><img src={Discord} alt="" /></a>
+          <a  href="https://mobile.twitter.com/cosmicapesnft" target="_blank"><img src={Twitter} alt="" /></a>
        </div>
        <div className={classes.bottomGroup}> 
 
@@ -383,8 +383,8 @@ MMA monkeys ready to fight for the championship.</p> */}
           </div>
           ) :(
             <MintButton
-              //  disabled={isSoldOut || isMinting || !isActive}
-              disabled
+               disabled={isSoldOut || isMinting || !isActive}
+              // disabled
               onClick={onMint}
               variant="contained"
          
@@ -412,7 +412,7 @@ MMA monkeys ready to fight for the championship.</p> */}
         </div>
        :(
          <>
-          <p style={{fontSize:"30px",margin:"30px auto"}}>{days.toString().padStart(2,"0")}:{hours.toString().padStart(2,"0")}:{minutes.toString().padStart(2,"0")}:{seconds.toString().padStart(2,"0")}</p>
+          <p style={{fontSize:"50px",margin:"40px auto 0"}}>{days.toString().padStart(2,"0")}:{hours.toString().padStart(2,"0")}:{minutes.toString().padStart(2,"0")}:{seconds.toString().padStart(2,"0")}</p>
           <Button variant="contained" disabled>Mint now</Button>
         </>
         )}

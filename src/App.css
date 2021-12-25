@@ -105,3 +105,9 @@ body .MuiButtonBase-root {
 .MuiList-root.MuiList-padding > .MuiListItem-root:nth-child(n + 2) > select {
   display: none;
 }
+
+body .MuiButton-contained.Mui-disabled {
+  background-color: gray;
+
+  cursor: not-allowed;
+}
