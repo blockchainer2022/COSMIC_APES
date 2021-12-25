@@ -343,8 +343,8 @@ MMA monkeys ready to fight for the championship.</p> */}
         
 
        <div className={classes.icon}>
-          <a href="http://discord.gg/HA2gFYeU8B" target="_blank" ><img src={Discord} alt="" /></a>
-          <a  href="https://twitter.com/YamaYeti" target="_blank"><img src={Twitter} alt="" /></a>
+          <a href="https://discord.com/invite/8VTNmSkRWj" target="_blank" ><img src={Discord} alt="" /></a>
+          <a  href="https://mobile.twitter.com/cosmicapesnft" target="_blank"><img src={Twitter} alt="" /></a>
        </div>
        <div className={classes.bottomGroup}> 
 
