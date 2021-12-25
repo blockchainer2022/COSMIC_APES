@@ -411,7 +411,7 @@ MMA monkeys ready to fight for the championship.</p> */}
         </div>
        :(
          <>
-          <p style={{fontSize:"50px",margin:"40px auto 0"}}>{days.toString().padStart(2,"0")}:{hours.toString().padStart(2,"0")}:{minutes.toString().padStart(2,"0")}:{seconds.toString().padStart(2,"0")}</p>
+          <p style={{fontSize:"45px",margin:"20px auto 0",lineHeight:"normal"}}>{days.toString().padStart(2,"0")}:{hours.toString().padStart(2,"0")}:{minutes.toString().padStart(2,"0")}:{seconds.toString().padStart(2,"0")}</p>
           <Button variant="contained" disabled>Mint now</Button>
         </>
         )}

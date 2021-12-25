@@ -46,7 +46,6 @@ body .MuiButtonBase-root {
   /* background: white; */
   color: black;
   display: block;
-
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
@@ -108,6 +107,6 @@ body .MuiButtonBase-root {
 
 body .MuiButton-contained.Mui-disabled {
   background-color: gray;
-
   cursor: not-allowed;
+  margin-top: 40px;
 }
