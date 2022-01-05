@@ -383,9 +383,7 @@ MMA monkeys ready to fight for the championship.</p> */}
           </div>
           ) :(
             <MintButton
-<!--                disabled={isSoldOut || isMinting || !isActive} -->
-<!--               onClick={onMint} -->
-              disabled
+                             disabled
               variant="contained"
          
             >
