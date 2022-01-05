@@ -379,12 +379,13 @@ MMA monkeys ready to fight for the championship.</p> */}
           <MintContainer>
           {!wallet ? (
            <div className="connect-wallet">
-            <ConnectButton fullWidth >Mint Now</ConnectButton>
+            <ConnectButton fullWidth disabled >Mint Now</ConnectButton>
           </div>
           ) :(
             <MintButton
-               disabled={isSoldOut || isMinting || !isActive}
-              onClick={onMint}
+<!--                disabled={isSoldOut || isMinting || !isActive} -->
+<!--               onClick={onMint} -->
+              disabled
               variant="contained"
          
             >
